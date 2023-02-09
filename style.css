@@ -1,0 +1,338 @@
+/* **********************GENERAL************************************ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial';
+    background-color: goldenrod;
+}
+
+#main_bloc{
+    width: 75%;
+    margin:auto;
+}
+
+/* 
+*************************header********************************************* */
+
+
+
+
+.container {
+    overflow: hidden;
+    
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    background-color: rgb(118, 143, 253);
+    font-size: 50px;
+    
+}
+
+figure .family {
+    vertical-align: top; /* Permet de supprimer le petit liseré de l'image restant */
+    width: 100%;
+    border-bottom:2px solid white;
+    border-top: 2px solid white;
+
+}
+
+/* 
+
+*****************************************principal********************************* */
+
+
+main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+
+}
+
+.sub_main01{
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    padding: 0px 10px;
+    text-align: justify;
+}
+
+.simpson_p{
+    font-size: 25px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.img_movie{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image_box img{
+    display: inline;
+    justify-content: center;
+    width: 20%;
+    border: 3px ridge rgb(175, 175, 175);
+    justify-content: space-between;
+}
+
+h1 {
+    color: goldenrod;
+}
+
+nav {
+    background-color: rgb(118, 143, 253);
+    width: 100%;
+    height: fit-content;
+    font-size: 18px;
+    padding: 0 3em;    
+}
+
+.borderbox{
+    border-bottom: 4px dashed rgb(118, 143, 253);
+    
+}
+
+ul{
+    display: flex;
+    justify-content:space-evenly;
+    padding: 20px 0;
+    
+}
+
+ul li {
+    margin: 10px;
+
+}
+
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+aside {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+    margin-top: 75px;
+    margin-bottom: 11px;
+    margin-right: 10px;
+    background-color: rgb(118, 143, 253);
+    
+}
+
+.matt {
+    width: 100%;
+    height: auto;
+    border: 2px solid white;
+
+}
+
+figcaption {
+    text-align: center;
+    padding: 10px 0;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+h4 {
+    font-weight: normal;
+    color: white;
+    font-style: italic;
+}
+.auteur{
+    display: flex;
+    flex-direction: column;
+}
+
+.pauteur {
+    width: 15em;
+    font-size: 20px;
+    color: white;
+    text-align:justify;
+}
+
+/* 
+
+*****************************************Bas de Page********************************* */
+
+small {
+    color: white;  
+}
+
+footer {
+    height: 5vh;
+    background-color: rgb(34, 54, 145);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+/****************************************************************************TABLET*****************************************************************************/
+
+
+/* **********************GENERAL************************************ */
+
+
+
+@media only screen and (min-device-width :768px)
+and (orientation : portrait) {
+
+
+#main_bloc{
+    width: 100%;
+
+}
+
+/* 
+*************************header********************************************* */
+
+
+
+h2 {
+    font-size: 30px;
+  
+}
+
+figure .family {
+    vertical-align: top;
+    width: 100%;
+}
+
+/* 
+
+*****************************************principal********************************* */
+main {
+    background-color: goldenrod;
+    padding: 0px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+article {
+    height: auto;
+    font-size: 18px;
+    padding: 10px 10px;
+}
+
+
+nav {
+    padding: 0 5vh;
+}
+
+.image_box img{
+    width: 55%;
+}
+
+.img_movie{
+    position: relative;
+    right:-9em;
+}
+
+aside {
+    margin-top: 6.5em;
+}
+
+h3{
+    font-size: 28px;
+}
+
+h4{
+    font-size: 20px;
+}
+
+}
+
+/****************************************************************************MOBILE_DEVICE*****************************************************************************/
+
+@media only screen and (max-width :416px)
+and (orientation : portrait) {
+
+#main_bloc{
+    width:100%;
+}
+
+h2{
+    font-size: 24px;
+
+}
+
+main {
+   
+    background-color: goldenrod;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    padding-top: 1vh;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h3 {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+
+.img_movie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.image_box img{
+    width: 40vh;
+    margin-bottom: 3vh;
+}
+
+aside{
+    width:100%;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.sub_main01{
+    display: flex;
+    flex-direction: column;
+
+}
+}
+
